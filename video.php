@@ -8,7 +8,7 @@ if (!$video_file || !file_exists($video_file)) {
 }
 
 // Define the expected subtitle file (same base name, with .vtt extension)
-$subtitle_file = preg_replace('/\.[^.]+$/', '.vtt', $video_file);
+$subtitle_file = preg_replace('/\.[^.]+$/', '.srt', $video_file);
 $subtitle_exists = file_exists($subtitle_file);
 ?>
 <!DOCTYPE html>
