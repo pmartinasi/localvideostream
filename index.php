@@ -1,6 +1,6 @@
 <?php
 // Scan the current directory for video files with specific extensions
-$video_files = array_filter(glob("vid-files/*.{mp4}", GLOB_BRACE));
+$video_files = array_filter(glob("vid-files/*.{mp4,mkv}", GLOB_BRACE));
 
 // Function to generate a thumbnail for each video
 function getThumbnail($video) {
