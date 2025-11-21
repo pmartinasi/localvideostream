@@ -34,8 +34,9 @@ $subtitle_exists = file_exists($subtitle_file);
     <div class="controls">
         <button id="playPauseBtn" class="btn">Play</button>
         <input type="range" id="progressBar" value="0" class="slider">
-        <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
-        <button id="muteBtn" class="btn">Mute</button>
+        <!--<span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>-->
+        <!--<button id="muteBtn" class="btn">Mute</button>-->
+		<span><a href="<?php echo htmlspecialchars($video_file); ?>">file</a></span>
         <input type="range" id="volumeBar" class="slider" value="1" max="1" step="0.05">
         <button id="fullscreenBtn" class="btn">Fullscreen</button>
     </div>
