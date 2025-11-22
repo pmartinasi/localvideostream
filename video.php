@@ -23,6 +23,9 @@ $subtitle_exists = file_exists($subtitle_file);
 <body>
 
 <div class="video-player-container">
+    <div class="controls">
+		<span><a href="index.php>">Back to video list.</a></span>
+    </div>
     <video id="videoPlayer" controls preload="metadata">
         <source src="<?php echo htmlspecialchars($video_file); ?>" type="video/mp4">
         <?php if ($subtitle_exists): ?>
@@ -30,7 +33,6 @@ $subtitle_exists = file_exists($subtitle_file);
         <?php endif; ?>
         Your browser does not support the video tag.
     </video>
-
     <div class="controls">
         <button id="playPauseBtn" class="btn">Play</button>
         <input type="range" id="progressBar" value="0" class="slider">
